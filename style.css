@@ -1,0 +1,141 @@
+.container {
+  box-sizing: border-box;
+  width: 1170px;
+  margin: 24px auto;
+}
+body {
+  font-family: "DM sans", "sans-sarif";
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+.navbar {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e0e62;
+}
+a,
+ul {
+  display: flex;
+  margin-right: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: #15143966;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #15143966;
+  font-size: 18px;
+}
+
+.header-item {
+  margin-right: 0;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #15143966;
+}
+
+.nav-right button {
+  padding: 10px 15px;
+  background-color: #00c1a1;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+h3 {
+  width: 600px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1e0e62;
+  margin-bottom: 40px;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-form {
+  width: 470px;
+  height: 283px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.signup-form input {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 470px;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 17px;
+}
+
+.signup-form button {
+  color: white;
+  background-color: #00c1a1;
+  width: 470px;
+  height: 60px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.signup-form button:hover {
+  background-color: #008f7a;
+}
+
+.terms {
+  text-align: center;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 40%);
+  margin-top: 17px;
+}
+
+.hero-image {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+.hero-image img {
+  width: 470px;
+  height: 265px;
+}
+
+.hero-image .p-hero {
+  width: 75%;
+  color: #15143966;
+  font-size: 18px;
+  line-height: 28px;
+}
