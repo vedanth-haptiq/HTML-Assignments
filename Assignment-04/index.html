@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./script.js"></script>
@@ -58,7 +59,11 @@
                     </div>
                     <hr class="line">
                     </div>
-                    <button class="search">Search</button>
+                    <a class="searchButton" href="#">
+                        <span class="search">Search</span>
+                        <img src="./IMAGES/searchicon.png" alt="search">
+                    </a>
+                    
             </div>
         </div>
     </section>
@@ -108,21 +113,21 @@
         <div class="carousel">
           <div class="card">
             <img src="./IMAGES/card.jpeg" alt="Service 1">
-            <div class="card-content">
+            <div class="cardContent">
                 <div class="ratings">
                     <p>4.5</p>
                     <p>104 reviews</p>
                   </div>
               <p class="title">Salon Name</p>
               <p class="address">Brookpark Ext, 27085, North Olmsted, 44070</p>
-              <button class="btn-btn">Book Now</button>
+              <button class="btnBtn">Book Now</button>
             </div>
           </div>
           <div class="card">
             <img src="./IMAGES/card2.jpeg" alt="Service 2">
-            <div class="card-content">
-                <div class="ratings">
-                    <p>4.5</p>
+            <div class="cardContent">
+            <div class="ratings">
+                    <p class="rating">4.5</p>
                     <p>104 reviews</p>
                   </div>
               <p class="title">Salon Name</p>
@@ -132,7 +137,7 @@
           </div>
           <div class="card">
             <img src="./IMAGES/card3.jpeg" alt="Service 3">
-            <div class="card-content">
+            <div class="cardContent">
                 <div class="ratings">
                     <p>4.5</p>
                     <p>104 reviews</p>
@@ -144,7 +149,42 @@
           </div>
           <div class="card">
             <img src="./IMAGES/card4.jpeg" alt="Service 4">
-            <div class="card-content">
+            <div class="cardContent">
+            <div class="ratings">
+              <p>4.5</p>
+              <p>104 reviews</p>
+            </div>
+              <p class="title">Salon Name</p>
+              <p class="address">Brookpark Ext, 27085, North Olmsted, 44070</p>
+              <button>Book Now</button>
+            </div>
+          </div><div class="card">
+            <img src="./IMAGES/card2.jpeg" alt="Service 2">
+            <div class="cardContent">
+            <div class="ratings">
+                    <p class="rating">4.5</p>
+                    <p>104 reviews</p>
+                  </div>
+              <p class="title">Salon Name</p>
+              <p class="address">Brookpark Ext, 27085, North Olmsted, 44070</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./IMAGES/card3.jpeg" alt="Service 3">
+            <div class="cardContent">
+                <div class="ratings">
+                    <p>4.5</p>
+                    <p>104 reviews</p>
+                  </div>
+              <p class="title">Salon Name</p>
+              <p class="address">Brookpark Ext, 27085, North Olmsted, 44070</p>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./IMAGES/card4.jpeg" alt="Service 4">
+            <div class="cardContent">
             <div class="ratings">
               <p>4.5</p>
               <p>104 reviews</p>
@@ -192,10 +232,6 @@
             <img src="./IMAGES/Logo.png" alt="logo">
           </div>
           <div class="footerIcons">
-            <!-- <img src="./IMAGES/FB.png" alt="#">
-            <img src="./IMAGES/X.png" alt="#">
-            <img src="./IMAGES/linkedin.png" alt="#">
-            <img src="./IMAGES/insta.png" alt="#"> -->
             <ul class="footerSymbols">
                 <li><a><img src="./IMAGES/FB.png" alt="#"></a></li>
                 <li><a><img src="./IMAGES/X.png" alt="#"></a></li>
