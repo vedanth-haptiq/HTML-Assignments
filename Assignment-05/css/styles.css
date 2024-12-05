@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1185px;
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.customNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav-link {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar .btn-primary {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(35, 166, 240, 1);
+  border: none;
+}
+
+/* Hero Section */
+.heroSection {
+  background: url("../images/background.jpg") center center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.heroTitle {
+  font-size: 58px;
+  line-height: 80px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+.heroSubtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.heroButtons .btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.heroButtons .btn-primary {
+  width: 185px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  background-color: rgba(35, 166, 240, 1);
+  border: none;
+}
+
+.heroButtons .btn-outline-light {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  border: 1px solid white;
+}
+.features {
+  background-color: rgba(37, 43, 66, 1);
+}
+
+.featureCard img {
+  margin-bottom: 30px;
+}
+.featureCard h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+.featureCard p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+.featureCard {
+  text-align: center;
+  padding: 20px;
+  background: rgba(37, 43, 66, 1);
+  border-radius: 10px;
+  gap: 30px;
+  margin: 96px 0 96px 0;
+}
+
+.featureCard i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.industryTestimonials {
+  padding: 60px 0;
+  background-color: rgba(142, 194, 242, 1);
+}
+
+.industryTestimonials h2 {
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.industryTestimonials p.lead {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.testimonial {
+  position: relative;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 100px;
+  border: none;
+  background-color: rgba(142, 194, 242, 1);
+}
+
+.testimonial img {
+  width: 130px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.ratingImg img {
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+}
+.testimonial h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.testimonial p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500px;
+
+  color: rgba(115, 115, 115, 1);
+}
+
+.pricingSection {
+  background-color: #1d2434;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+.pricingSection h2 {
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.pricingSection p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.pricingCard {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  position: relative;
+}
+.pricingCard h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: rgba(37, 43, 66, 1);
+  margin-bottom: 35px;
+  margin-top: 50px;
+}
+.pricingCard h4 {
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 700;
+  color: rgba(35, 166, 240, 1);
+}
+
+.pricingCard p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgba(115, 115, 115, 1);
+}
+.badge {
+  position: absolute;
+  top: -25px;
+  right: 25px;
+}
+.button {
+  background-color: rgba(35, 166, 240, 1);
+  width: 246px;
+  height: 52px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+}
+
+.button:hover {
+  background-color: rgba(25, 146, 220, 1);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.tickMark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.tickMark p {
+  margin: 0;
+}
+.tickMark img {
+  display: block;
+  height: 30px;
+}
+.contactSection {
+  background: url("../images/contact\ background.jpg") center center/cover
+    no-repeat;
+  height: 100vh;
+  padding: 50px 0;
+}
+.contactForm {
+  margin-top: 50px;
+  padding-top: 40px;
+}
+.contactForm h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.contactForm h3 {
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.form-control {
+  background-color: rgba(249, 249, 249, 1);
+}
+
+.footerUpper {
+  background-color: rgba(250, 250, 250, 1);
+}
+.footerHeading {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 305px;
+}
+.footerHeading h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  padding-top: 40px;
+  color: rgba(37, 43, 66, 1);
+}
+.subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: rgba(115, 115, 115, 1);
+  margin-bottom: 40px;
+}
+
+.footerSection {
+  background: #1d2434;
+  color: #fff;
+  padding: 30px 0;
+
+}
+.footerSection ul{
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.footerSection h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 20px;
+}
+.footerSection ul li {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footerSection img {
+  width: 24px;
+  height: 24px;
+}
+
+.footerPara {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgba(115, 115, 115, 1);
+  margin-top: 25px;
+  text-align: center;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    background: rgba(37, 43, 66, 1); ;
+  }
+  .industryTestimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .industryTestimonials .card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ratingImg {
+    display: none;
+  }
+  .footerUpper .button {
+    margin-bottom: 20px;
+  }
+
+  .featureList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerHeading {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .pricingButton {
+    align-items: center;
+    text-align: center;
+    order: 1;
+  }
+}
